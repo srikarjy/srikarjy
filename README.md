@@ -17,7 +17,7 @@ Building production ML systems with expertise in LLMs, RAG architectures, and ML
 
 **[Clinical LLM](https://github.com/srikarjy/Domain-Adapted-LLM-for-Clinical-Text-Analysis)** - Fine-tuned Llama 3 8B using QLoRA with 87% F1-score on medical entity extraction
 
-**[5G Network Optimization](https://doi.org/10.1109/FNWF.2024.11028856)** - IEEE publication on explainable AI for energy-efficient telecom networks
+
 
 ### 🛠️ Tech Stack
 
