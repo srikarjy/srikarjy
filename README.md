@@ -88,6 +88,60 @@ Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level f
 
 ---
 
+### 🕸️ Knowledge Graph — Skills → Problems → Projects
+
+```mermaid
+graph LR
+    A[Srikar] --> B[Backend Engineering]
+    A --> C[ML and Retrieval]
+    A --> D[LLM and Agent Systems]
+    A --> E[Data Infrastructure]
+    A --> F[Cloud]
+
+    B --> B1[FastAPI]
+    B --> B2[PostgreSQL]
+    B --> B3[Go]
+    B --> BP1["Problem: async API p95 latency 8s"]
+    B --> BP2["Problem: serving retrieval at scale"]
+    BP1 -.-> P1[["Gutslane ERP<br/>8s to 200ms"]]
+    BP2 -.-> P2[["ChiEAC Platform<br/>190 req/s, 4-5ms"]]
+
+    C --> C1[PyTorch]
+    C --> C2[PubMedBERT / BioBERT]
+    C --> C3[FAISS / pgvector]
+    C --> CP1["Problem: semantic search over biomedical corpus"]
+    C --> CP2["Problem: pharmacogenomic data is duplicated and unranked"]
+    CP1 -.-> P2
+    CP2 -.-> P3[["PharmGraph<br/>CPIC-ranked network"]]
+
+    D --> D1[LangGraph]
+    D --> D2[RAG]
+    D --> D3[QLoRA / PEFT]
+    D --> D4[MCP]
+    D --> DP1["Problem: LLM narration invents unsupported claims"]
+    D --> DP2["Problem: multi-agent confidence isn't calibrated"]
+    D --> DP3["Problem: agent queries to bio DBs leave no audit trail"]
+    DP1 -.-> P4[["FlowCast<br/>39.6% to 9.4% unsupported claims"]]
+    DP2 -.-> P5[["Aletheia<br/>ECE 0.184 to 0.117"]]
+    DP3 -.-> P6[["Biolab MCP Server<br/>retrieval_id lineage"]]
+
+    E --> E1[Kafka]
+    E --> E2[Airflow / PySpark]
+    E --> E3[Neo4j]
+    E --> EP1["Problem: silent sensor data loss in real time streams"]
+    E --> EP2["Problem: tracking my own dev activity across tools"]
+    EP1 -.-> P7[["GlucoPulse<br/>Kafka to TimescaleDB to PyTorch"]]
+    EP2 -.-> P8[["Personal KG<br/>Neo4j + pgvector hybrid RAG"]]
+
+    F --> F1[AWS SageMaker / Bedrock]
+    F --> F2[Lambda]
+    F --> FP1["Currently: AWS CCP, then SAA-C03"]
+```
+
+*Every branch traces back to a shipped project with a measured result, not a tutorial repo. The `Personal KG` node is a live instance of the hybrid RAG architecture I use in Aletheia and Biolab, applied to my own Claude Code and research activity.*
+
+---
+
 ### 🛠️ Tech Stack
 
 **Backend**
