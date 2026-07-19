@@ -88,16 +88,6 @@ Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level f
 
 ---
 
-### 🍩 Contribution Breakdown
-
-<div align="center">
-<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%20%22doughnut%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%22Commits%20%2881%25%29%22%2C%20%22Pull%20Requests%20%2819%25%29%22%2C%20%22Issues%20%280%25%29%22%2C%20%22Code%20Review%20%280%25%29%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22data%22%3A%20%5B81%2C%2019%2C%200%2C%200%5D%2C%20%22backgroundColor%22%3A%20%5B%22%23216e39%22%2C%20%22%2330a14e%22%2C%20%22%2340c463%22%2C%20%22%239be9a8%22%5D%2C%20%22borderWidth%22%3A%202%2C%20%22borderColor%22%3A%20%22%23ffffff%22%7D%5D%7D%2C%20%22options%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Contribution%20Breakdown%20%28recent%20activity%29%22%7D%2C%20%22legend%22%3A%20%7B%22position%22%3A%20%22right%22%7D%7D%7D&width=500&height=350&backgroundColor=white" alt="Contribution breakdown donut chart" />
-</div>
-
-*Pulled from your last 100 public GitHub events: 35 pushes, 8 pull request events, 0 issues authored, 0 review activity. That last part is worth noting, not just charting: since you work solo across your own repos, you push directly and open PRs without a review step. That reads fine as a personal project pattern, but if a recruiter asks about your code review experience, that answer needs to come from your actual team roles (ChiEAC, BU Lin Lab, Gutslane), not this repo.*
-
----
-
 ### 🛠️ Tech Stack
 
 **Backend**
