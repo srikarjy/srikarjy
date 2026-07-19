@@ -88,13 +88,13 @@ Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level f
 
 ---
 
-### 📈 Commit Activity by Domain
+### 🍩 Contribution Breakdown
 
 <div align="center">
-<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%20%22bar%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%222025-07%22%2C%20%222025-08%22%2C%20%222026-06%22%2C%20%222026-07%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Backend%20%28biolab-mcp-server%29%22%2C%20%22data%22%3A%20%5B0%2C%200%2C%201%2C%205%5D%2C%20%22backgroundColor%22%3A%20%22%239be9a8%22%7D%2C%20%7B%22label%22%3A%20%22ML%20/%20Retrieval%20%28PharmGraph%2C%20lipidos%2C%20BioFeed%20AI%29%22%2C%20%22data%22%3A%20%5B0%2C%202%2C%203%2C%2016%5D%2C%20%22backgroundColor%22%3A%20%22%2340c463%22%7D%2C%20%7B%22label%22%3A%20%22LLM%20/%20Agents%20%28Aletheia%2C%20FlowCast%2C%20LiveQuest%29%22%2C%20%22data%22%3A%20%5B1%2C%200%2C%200%2C%2017%5D%2C%20%22backgroundColor%22%3A%20%22%2330a14e%22%7D%2C%20%7B%22label%22%3A%20%22Data%20/%20Infra%20%28GlucoPulse%29%22%2C%20%22data%22%3A%20%5B0%2C%200%2C%201%2C%202%5D%2C%20%22backgroundColor%22%3A%20%22%23216e39%22%7D%5D%7D%2C%20%22options%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Commits%20by%20Domain%2C%20Month%20over%20Month%22%7D%2C%20%22legend%22%3A%20%7B%22position%22%3A%20%22bottom%22%7D%2C%20%22scales%22%3A%20%7B%22xAxes%22%3A%20%5B%7B%22stacked%22%3A%20true%7D%5D%2C%20%22yAxes%22%3A%20%5B%7B%22stacked%22%3A%20true%2C%20%22scaleLabel%22%3A%20%7B%22display%22%3A%20true%2C%20%22labelString%22%3A%20%22Commits%22%7D%7D%5D%7D%7D%7D&width=700&height=400&backgroundColor=white" alt="Commit activity by domain chart" />
+<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%20%22doughnut%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%22Commits%20%2881%25%29%22%2C%20%22Pull%20Requests%20%2819%25%29%22%2C%20%22Issues%20%280%25%29%22%2C%20%22Code%20Review%20%280%25%29%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22data%22%3A%20%5B81%2C%2019%2C%200%2C%200%5D%2C%20%22backgroundColor%22%3A%20%5B%22%23216e39%22%2C%20%22%2330a14e%22%2C%20%22%2340c463%22%2C%20%22%239be9a8%22%5D%2C%20%22borderWidth%22%3A%202%2C%20%22borderColor%22%3A%20%22%23ffffff%22%7D%5D%7D%2C%20%22options%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Contribution%20Breakdown%20%28recent%20activity%29%22%7D%2C%20%22legend%22%3A%20%7B%22position%22%3A%20%22right%22%7D%7D%7D&width=500&height=350&backgroundColor=white" alt="Contribution breakdown donut chart" />
 </div>
 
-*Pulled directly from commit history across active repos, grouped by domain. LLM/Agents and ML/Retrieval are the fastest-growing lanes, both concentrated in the June to July 2026 build sprint.*
+*Pulled from your last 100 public GitHub events: 35 pushes, 8 pull request events, 0 issues authored, 0 review activity. That last part is worth noting, not just charting: since you work solo across your own repos, you push directly and open PRs without a review step. That reads fine as a personal project pattern, but if a recruiter asks about your code review experience, that answer needs to come from your actual team roles (ChiEAC, BU Lin Lab, Gutslane), not this repo.*
 
 ---
 
