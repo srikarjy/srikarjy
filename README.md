@@ -1,32 +1,144 @@
-## Hi, I'm Srikar 👋
+<div align="center">
 
-**Backend & ML Engineer** | Data Scientist Fellow @ ChiEAC | MS Computer Science, Boston University (Jan 2026) | Biotech background
+# Hi, I'm Srikar 👋
 
-I build retrieval systems, agentic pipelines, and provenance infrastructure for biomedical and scientific applications, then validate them against real baselines instead of shipping something that just sounds impressive.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Backend+%26+ML+Engineer;Building+RAG+%2B+Multi-Agent+Systems;Biotech+Background+%E2%86%92+Production+ML;Data+Scientist+Fellow+%40+ChiEAC" alt="Typing SVG" />
+
+**Data Scientist Fellow @ ChiEAC** · MS Computer Science, Boston University (Jan 2026) · Biotech background
+
+I build retrieval systems, agentic pipelines, and provenance infrastructure for biomedical and scientific applications, validated against real baselines, not vibes.
+
+[![Email](https://img.shields.io/badge/Email-srikarjy025%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srikarjy025@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-srikaryadhunandan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srikaryadhunandan-142309162)
+
+</div>
+
+---
 
 ### 🚀 Featured Projects
 
-**[FlowCast](https://github.com/srikarjy/Flowcast)** — Go CLI that diagnoses nf-core/rnaseq pipeline runs. A modified Z-score (MAD) classifier hit F1 0.870 against a 56-sample labeled set, a 23% improvement over a fixed-threshold baseline. The LLM narration layer cut unsupported causal claims from 39.6% to 9.4% against an unconstrained LLM baseline on a 48-case golden set.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**[Aletheia](https://github.com/srikarjy/Aletheia)** — Multi-agent scientific reasoning system where agents with distinct epistemic roles debate a claim before producing a conclusion, with every piece of evidence traced to its exact source and retrieval step. Historical-outcome calibration reduced confidence ECE from 0.184 to 0.117, and counterfactual evaluation caught 13 of 16 known memory-induced regressions.
+**[🧬 FlowCast](https://github.com/srikarjy/Flowcast)**
+Go CLI diagnosing nf-core/rnaseq pipeline runs
 
-**[GlucoPulse](https://github.com/srikarjy/GlucoPulse)** — Real-time streaming pipeline for continuous glucose monitor data. Full stack from ingestion to serving: Kafka, TimescaleDB, PySpark, Airflow, PyTorch, ONNX, FastAPI, Grafana. TFT model evaluated against a persistence baseline at 30 and 60 minute forecast horizons.
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
-**[BioFeed AI](https://github.com/srikarjy/BioFeed-AI)** — iOS biotech intelligence app (SwiftUI + FastAPI) with an implicit-feedback recommendation engine improving offline replay CTR 30% over a popularity baseline across 8,500+ articles, plus an anomaly detection pipeline correlating article-volume spikes with stock movement, surfacing 3 candidate early-signal events in a 2-month backtest.
+Modified Z-score (MAD) classifier → **F1 0.870**, a **23% lift** over fixed-threshold baseline. LLM narration cut unsupported causal claims **39.6% → 9.4%** on a 48-case golden set.
 
-**[Biolab MCP Server](https://github.com/srikarjy/biolab-mcp-server)** — Python MCP server that sits between AI agents and biological databases, logging every query with full retrieval context and returning a `retrieval_id` for end-to-end provenance, multi-tenant with JWT and SSE support.
+</td>
+<td width="50%" valign="top">
 
-**[PharmGraph](https://github.com/srikarjy/PharmGraph)** — Interactive pharmacogenomic interaction network explorer sourced live from Open Targets, deduplicated and ranked by CPIC evidence level.
+**[⚖️ Aletheia](https://github.com/srikarjy/Aletheia)**
+Multi-agent scientific reasoning, agents debate before concluding
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
+
+Historical-outcome calibration cut confidence ECE **0.184 → 0.117**. Counterfactual eval caught **13/16** known memory-induced regressions.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[🩸 GlucoPulse](https://github.com/srikarjy/GlucoPulse)**
+Real-time CGM streaming pipeline, ingestion to serving
+
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+TFT model evaluated against a persistence baseline at 30 and 60 minute forecast horizons. Full stack: Kafka, TimescaleDB, PySpark, Airflow, ONNX, Grafana.
+
+</td>
+<td width="50%" valign="top">
+
+**[📱 BioFeed AI](https://github.com/srikarjy/BioFeed-AI)**
+iOS biotech intelligence app, SwiftUI + FastAPI
+
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+
+Implicit-feedback recs improve CTR **30%** over popularity baseline across 8,500+ articles. Anomaly detection surfaced **3 candidate signals** in a 2-month backtest.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[🔐 Biolab MCP Server](https://github.com/srikarjy/biolab-mcp-server)**
+Provenance layer between AI agents and bio databases
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+
+Every query logged with full retrieval context, returns a `retrieval_id` for end-to-end lineage. Multi-tenant, JWT auth, SSE streaming.
+
+</td>
+<td width="50%" valign="top">
+
+**[💊 PharmGraph](https://github.com/srikarjy/PharmGraph)**
+Pharmacogenomic interaction network explorer
+
+![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+
+Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level for genes, proteins, and drugs.
+
+</td>
+</tr>
+</table>
+
+---
 
 ### 🛠️ Tech Stack
 
-**Backend:** Python | FastAPI | PostgreSQL | Redis | Docker | Go
-**ML/AI:** PyTorch | PubMedBERT/BioBERT | Sentence Transformers | FAISS | pgvector
-**LLMs & Agents:** LangGraph | RAG | Multi-agent orchestration | QLoRA (PEFT) | MCP
-**Data Infra:** Kafka | TimescaleDB | PySpark | Airflow | Neo4j
-**Cloud:** AWS (Lambda, S3, SageMaker, Bedrock) | pursuing AWS CCP and SAA-C03
+**Backend**
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-### 📫 Connect
+**ML / AI**
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
+![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
 
-- 📧 Email: srikarjy025@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/srikaryadhunandan-142309162](https://www.linkedin.com/in/srikaryadhunandan-142309162)
+**LLMs & Agents**
+![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
+![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
+![QLoRA](https://img.shields.io/badge/-QLoRA%2FPEFT-FF6F00?style=flat-square)
+![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square)
+
+**Data Infra**
+![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
+![Spark](https://img.shields.io/badge/-PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+
+**Cloud**
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![SageMaker](https://img.shields.io/badge/-SageMaker-01A88D?style=flat-square)
+![Bedrock](https://img.shields.io/badge/-Bedrock-8C4FFF?style=flat-square)
+
+---
+
+### 📊 GitHub Stats
+
+<div align="center">
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=srikarjy&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=srikarjy&layout=compact&theme=tokyonight&hide_border=true" />
+</div>
+
+<div align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=srikarjy&theme=tokyonight&hide_border=true" />
+</div>
+
+---
+
+<div align="center">
+
+📫 **Open to backend, ML engineering, and computational biology roles** where rigor matters more than hype.
+
+</div>
