@@ -142,6 +142,16 @@ graph LR
 
 ---
 
+### 📈 Expertise Growth by Domain
+
+<div align="center">
+<img src="https://quickchart.io/chart?c=%7B%22type%22%3A%20%22line%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%222022%5CnGutslane%22%2C%20%222024%5CnIIT%20Dharwad%22%2C%20%222025%5CnBU%20Lin%20Lab%22%2C%20%222026%5CnChiEAC%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Backend%20Engineering%22%2C%20%22data%22%3A%20%5B3%2C%203%2C%203%2C%205%5D%2C%20%22borderColor%22%3A%20%22%2300ADD8%22%2C%20%22fill%22%3A%20false%2C%20%22tension%22%3A%200.3%2C%20%22borderWidth%22%3A%203%7D%2C%20%7B%22label%22%3A%20%22ML%20/%20Retrieval%22%2C%20%22data%22%3A%20%5B1%2C%203%2C%204%2C%205%5D%2C%20%22borderColor%22%3A%20%22%23EE4C2C%22%2C%20%22fill%22%3A%20false%2C%20%22tension%22%3A%200.3%2C%20%22borderWidth%22%3A%203%7D%2C%20%7B%22label%22%3A%20%22LLM%20/%20Agents%22%2C%20%22data%22%3A%20%5B0%2C%201%2C%204%2C%205%5D%2C%20%22borderColor%22%3A%20%22%238A2BE2%22%2C%20%22fill%22%3A%20false%2C%20%22tension%22%3A%200.3%2C%20%22borderWidth%22%3A%203%7D%2C%20%7B%22label%22%3A%20%22Cloud%20/%20Infra%22%2C%20%22data%22%3A%20%5B1%2C%202%2C%203%2C%204%5D%2C%20%22borderColor%22%3A%20%22%23FF9900%22%2C%20%22fill%22%3A%20false%2C%20%22tension%22%3A%200.3%2C%20%22borderWidth%22%3A%203%7D%5D%7D%2C%20%22options%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Expertise%20Growth%20by%20Domain%20%28role%20by%20role%29%22%7D%2C%20%22legend%22%3A%20%7B%22position%22%3A%20%22bottom%22%7D%2C%20%22scales%22%3A%20%7B%22yAxes%22%3A%20%5B%7B%22ticks%22%3A%20%7B%22min%22%3A%200%2C%20%22max%22%3A%205%2C%20%22stepSize%22%3A%201%2C%20%22callback%22%3A%20null%7D%2C%20%22scaleLabel%22%3A%20%7B%22display%22%3A%20true%2C%20%22labelString%22%3A%20%22Depth%20%28self-assessed%29%22%7D%7D%5D%7D%7D%7D&width=700&height=400&backgroundColor=white" alt="Expertise growth chart" />
+</div>
+
+*Tied to the role where each domain actually deepened, not a generic skill bar. Cloud is the one still climbing, which is exactly why the AWS certs are next.*
+
+---
+
 ### 🛠️ Tech Stack
 
 **Backend**
