@@ -4,7 +4,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Backend+%26+ML+Engineer;Building+RAG+%2B+Multi-Agent+Systems;Biotech+Background+%E2%86%92+Production+ML;Data+Scientist+Fellow+%40+ChiEAC" alt="Typing SVG" />
 
-**Data Scientist Fellow @ ChiEAC** · MS Computer Science, Boston University (Jan 2026) · Biotech background
+MS Computer Science, Boston University (Jan 2026) · Biotech background
 
 I build retrieval systems, agentic pipelines, and provenance infrastructure for biomedical and scientific applications, validated against real baselines, not vibes.
 
