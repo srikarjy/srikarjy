@@ -9,7 +9,7 @@ MS Computer Science, Boston University (Jan 2026) · Biotech background
 I build retrieval systems, agentic pipelines, and provenance infrastructure for biomedical and scientific applications, validated against real baselines, not vibes.
 
 [![Email](https://img.shields.io/badge/Email-srikarjy025%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srikarjy025@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-srikaryadhunandan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srikaryadhunandan-142309162)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-srikaryadhunandan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srikaryadhunandan)
 
 </div>
 
@@ -75,12 +75,12 @@ Every query logged with full retrieval context, returns a `retrieval_id` for end
 </td>
 <td width="50%" valign="top">
 
-**[💊 PharmGraph](https://github.com/srikarjy/PharmGraph)**
-Pharmacogenomic interaction network explorer
+**[🧫 metalsw](https://github.com/srikarjy/metalsw)**
+Exact Smith-Waterman protein search on Apple Silicon GPU via Metal
 
-![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Metal](https://img.shields.io/badge/Metal-000000?style=flat-square&logo=apple&logoColor=white)
 
-Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level for genes, proteins, and drugs.
+GPU output verified against a scalar CPU oracle across **78,006 sequence-score comparisons, 0 mismatches**. Up to **13.5x** Parasail's SIMD CPU throughput at 50k-sequence scale, 0.816 GCUPS/Watt measured.
 
 </td>
 </tr>
