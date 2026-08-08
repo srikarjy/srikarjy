@@ -84,6 +84,50 @@ Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level f
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+**[⚙️ metalsw](https://github.com/srikarjy/metalsw)**
+Exact Smith-Waterman protein search on Apple Silicon GPU via Metal
+
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Metal](https://img.shields.io/badge/Metal-000000?style=flat-square&logo=apple&logoColor=white)
+
+Correctness-verified against a scalar CPU oracle (0 mismatches / 78,006 comparisons) and cross-checked vs. Parasail. Up to **13.5x GPU/SIMD-CPU speedup** at 50K-sequence scale, **0.816 GCUPS/Watt** measured via `powermetrics`.
+
+</td>
+<td width="50%" valign="top">
+
+**[🔁 Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine)**
+Exactly-once workflow orchestration primitives, in Go
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+
+Idempotent step execution via SHA-256 dedup keys, crash recovery by replaying an append-only Postgres event log, reverse-order Saga compensation with durable checkpointing.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[🔬 Research-Orchestrator](https://github.com/srikarjy/Research-Orchestrator)**
+Agentic research assistant that debates evidence before concluding
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+
+Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), and Biolab-MCP-Server (fail-closed evidence/actions) behind confidence-gated human review. Designed to align with 21 CFR Part 11 / ALCOA+.
+
+</td>
+<td width="50%" valign="top">
+
+**[🧬 LiveQuest](https://github.com/srikarjy/LiveQuest)** · *in progress*
+Multi-agent biomedical investigation building a live Neo4j knowledge graph
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+
+8 specialized Claude agents (Curator, Literature, Drug, Trial, Hypothesis, Skeptic, Evidence, Provenance) stream findings into a graph with provenance and confidence on every edge.
+
+</td>
+</tr>
 </table>
 
 ---
