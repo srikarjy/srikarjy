@@ -120,7 +120,7 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-Exactly-once execution, Saga compensation, crash recovery, fail-closed ACID tool calls — the durable primitives underneath the agents, written in Go.
+
 
 **AI Engineering — agents & retrieval**
 ![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
@@ -132,7 +132,7 @@ Exactly-once execution, Saga compensation, crash recovery, fail-closed ACID tool
 ![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
 ![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
 
-Multi-agent debate (Proposer/Critic/Synthesizer), confidence calibration, provenance-tracked retrieval — evaluated against baselines, not shipped on vibes.
+
 
 **Computational Biology — where the two meet**
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
@@ -143,7 +143,7 @@ Multi-agent debate (Proposer/Critic/Synthesizer), confidence calibration, proven
 ![UniProt](https://img.shields.io/badge/-UniProt-1BA3E0?style=flat-square)
 ![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 
-GPU-accelerated sequence alignment (Smith-Waterman on Metal, protein search on CUDA), knowledge graphs over Open Targets/CPIC, provenance-backed literature retrieval — building the tools, not just calling an API.
+
 
 **Data Infra**
 ![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
