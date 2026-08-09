@@ -83,6 +83,8 @@ Exact Smith-Waterman protein search on Apple Silicon GPU via Metal
 Correctness-verified against a scalar CPU oracle (0 mismatches / 78,006 comparisons) and cross-checked vs. Parasail. Up to **13.5x GPU/SIMD-CPU speedup** at 50K-sequence scale, **0.816 GCUPS/Watt** measured via `powermetrics`.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[🔁 Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine)**
@@ -93,8 +95,6 @@ Exactly-once workflow orchestration primitives, in Go
 Idempotent step execution via SHA-256 dedup keys, crash recovery by replaying an append-only Postgres event log, reverse-order Saga compensation with durable checkpointing.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **[🔬 Research-Orchestrator](https://github.com/srikarjy/Research-Orchestrator)**
