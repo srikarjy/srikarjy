@@ -75,18 +75,6 @@ Every query logged with full retrieval context, returns a `retrieval_id` for end
 </td>
 <td width="50%" valign="top">
 
-**[💊 PharmGraph](https://github.com/srikarjy/PharmGraph)**
-Pharmacogenomic interaction network explorer
-
-![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
-
-Live-sourced from Open Targets, deduplicated and ranked by CPIC evidence level for genes, proteins, and drugs.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 **[⚙️ metalsw](https://github.com/srikarjy/metalsw)**
 Exact Smith-Waterman protein search on Apple Silicon GPU via Metal
 
@@ -115,16 +103,6 @@ Agentic research assistant that debates evidence before concluding
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 
 Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), and Biolab-MCP-Server (fail-closed evidence/actions) behind confidence-gated human review. Designed to align with 21 CFR Part 11 / ALCOA+.
-
-</td>
-<td width="50%" valign="top">
-
-**[🧬 LiveQuest](https://github.com/srikarjy/LiveQuest)** · *in progress*
-Multi-agent biomedical investigation building a live Neo4j knowledge graph
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-
-8 specialized Claude agents (Curator, Literature, Drug, Trial, Hypothesis, Skeptic, Evidence, Provenance) stream findings into a graph with provenance and confidence on every edge.
 
 </td>
 </tr>
