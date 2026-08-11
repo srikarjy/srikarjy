@@ -112,7 +112,7 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 
 ### 🛠️ Tech Stack
 
-**Backend —**
+**Backend **
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
