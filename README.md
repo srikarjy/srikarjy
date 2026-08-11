@@ -112,7 +112,7 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 
 ### 🛠️ Tech Stack
 
-**Backend — **
+**Backend —**
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
@@ -122,7 +122,7 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 
 
 
-**AI Engineering — **
+**AI Engineering**
 ![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
 ![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
 ![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square)
@@ -134,7 +134,7 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 
 
 
-**Computational Biology — **
+**Computational Biology**
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![CUDA](https://img.shields.io/badge/-CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![Metal](https://img.shields.io/badge/-Metal-000000?style=flat-square&logo=apple&logoColor=white)
