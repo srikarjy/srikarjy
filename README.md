@@ -6,10 +6,10 @@
 
 MS Computer Science, Boston University (Jan 2026) · Biotech background
 
-I build retrieval systems, agentic pipelines, and provenance infrastructure for biomedical and scientific applications, validated against real baselines, not vibes.
+Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — I build retrieval pipelines, multi-agent architectures, and production infrastructure, and I benchmark every one of them against a real baseline before calling it done.
 
-[![Email](https://img.shields.io/badge/Email-srikarjy025%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srikarjy025@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-srikaryadhunandan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srikaryadhunandan)
+[![Email](https://img.shields.io/badge/Email-srikarjy77%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:srikarjy77@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-srikarjy-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srikarjy)
 
 </div>
 
@@ -21,66 +21,72 @@ I build retrieval systems, agentic pipelines, and provenance infrastructure for 
 <tr>
 <td width="50%" valign="top">
 
-**[🧬 FlowCast](https://github.com/srikarjy/Flowcast)**
-Go CLI diagnosing nf-core/rnaseq pipeline runs
+**[🧬 FlowCast](https://github.com/srikarjy/Flowcast)** · Anomaly detection + LLM root-cause analysis for RNA-seq pipelines
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
-Modified Z-score (MAD) classifier → **F1 0.870**, a **23% lift** over fixed-threshold baseline. LLM narration cut unsupported causal claims **39.6% → 9.4%** on a 48-case golden set.
+**Problem:** nf-core/rnaseq runs fail silently; engineers manually dig through logs to find why.
+**Built:** Go CLI with a MAD-based statistical classifier to flag anomalous runs, plus an LLM layer that narrates the likely cause.
+**Result:** **F1 0.870**, a 23% lift over a fixed-threshold baseline. Grounding the LLM in retrieved pipeline context cut unsupported causal claims from **39.6% → 9.4%** on a 48-case eval set.
 
 </td>
 <td width="50%" valign="top">
 
-**[⚖️ Aletheia](https://github.com/srikarjy/Aletheia)**
-Multi-agent scientific reasoning, agents debate before concluding
+**[⚖️ Aletheia](https://github.com/srikarjy/Aletheia)** · Multi-agent debate system for scientific claim verification
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
 
-Historical-outcome calibration cut confidence ECE **0.184 → 0.117**. Counterfactual eval caught **13/16** known memory-induced regressions.
+**Problem:** single-agent LLM pipelines overstate confidence and hallucinate quietly.
+**Built:** a LangGraph pipeline where agents argue opposing positions and cross-examine each other before a verdict, calibrated against historical outcomes.
+**Result:** confidence ECE improved **0.184 → 0.117**; a counterfactual eval suite caught **13/16** known memory-induced regressions before they shipped.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[🩸 GlucoPulse](https://github.com/srikarjy/GlucoPulse)**
-Real-time CGM streaming pipeline, ingestion to serving
+**[🩸 GlucoPulse](https://github.com/srikarjy/GlucoPulse)** · Real-time forecasting pipeline, ingestion to serving
 
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
-TFT model evaluated against a persistence baseline at 30 and 60 minute forecast horizons. Full stack: Kafka, TimescaleDB, PySpark, Airflow, ONNX, Grafana.
+**Problem:** CGM data streams in real time, but most forecasting demos only work offline on static datasets.
+**Built:** end-to-end streaming stack — Kafka ingestion, TimescaleDB storage, PySpark features, a Temporal Fusion Transformer served via ONNX, Airflow-orchestrated, monitored in Grafana.
+**Result:** TFT forecasts benchmarked against a persistence baseline at 30- and 60-minute horizons, in production-shaped infra, not a notebook.
 
 </td>
 <td width="50%" valign="top">
 
-**[📱 BioFeed AI](https://github.com/srikarjy/BioFeed-AI)**
-iOS biotech intelligence app, SwiftUI + FastAPI
+**[📱 BioFeed AI](https://github.com/srikarjy/BioFeed-AI)** · Recommendation engine + anomaly detection, iOS + FastAPI
 
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 
-Implicit-feedback recs improve CTR **30%** over popularity baseline across 8,500+ articles. Anomaly detection surfaced **3 candidate signals** in a 2-month backtest.
+**Problem:** biotech news is high-volume and low-signal; analysts miss relevant stories.
+**Built:** SwiftUI app backed by a FastAPI service using implicit-feedback recommendations, plus an anomaly detector over company activity.
+**Result:** **30% CTR lift** over a popularity baseline across 8,500+ articles; anomaly model surfaced 3 candidate signals in a 2-month backtest.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[🔐 Biolab MCP Server](https://github.com/srikarjy/biolab-mcp-server)**
-Provenance layer between AI agents and bio databases
+**[🔐 Biolab MCP Server](https://github.com/srikarjy/biolab-mcp-server)** · Provenance & auth layer for AI agents querying bio databases
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
-Every query logged with full retrieval context, returns a `retrieval_id` for end-to-end lineage. Multi-tenant, JWT auth, SSE streaming.
+**Problem:** agentic tools querying scientific databases produce answers with no traceable lineage.
+**Built:** an MCP server that logs every query with full retrieval context, returns a `retrieval_id` for end-to-end lineage, with multi-tenant JWT auth and SSE streaming.
+**Result:** every AI-generated answer is auditable back to its exact source query — a compliance-ready pattern for regulated environments.
 
 </td>
 <td width="50%" valign="top">
 
-**[🧫 metalsw](https://github.com/srikarjy/metalsw)**
-Exact Smith-Waterman protein search on Apple Silicon GPU via Metal
+**[🧫 metalsw](https://github.com/srikarjy/metalsw)** · GPU-accelerated exact sequence alignment (Metal, Apple Silicon)
 
 ![C++](https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Metal](https://img.shields.io/badge/Metal-000000?style=flat-square&logo=apple&logoColor=white)
 
-GPU output verified against a scalar CPU oracle across **78,006 sequence-score comparisons, 0 mismatches**. Up to **13.5x** Parasail's SIMD CPU throughput at 50k-sequence scale, 0.816 GCUPS/Watt measured.
+**Problem:** exact Smith-Waterman protein search is accurate but slow on CPU at scale.
+**Built:** a Metal compute-shader implementation of Smith-Waterman, verified bit-for-bit against a scalar CPU oracle.
+**Result:** **13.5x** the throughput of Parasail's SIMD CPU implementation at 50k-sequence scale (0.816 GCUPS/Watt), with **0 mismatches** across 78,006 sequence-score comparisons.
 
 </td>
 </tr>
