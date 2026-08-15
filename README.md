@@ -4,7 +4,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Backend+%26+ML+Engineer;Building+RAG+%2B+Multi-Agent+Systems;Biotech+Background+%E2%86%92+Production+ML;Data+Scientist+Fellow+%40+ChiEAC" alt="Typing SVG" />
 
-MS Computer Science, Boston University (Jan 2026) · Biotech background
+MS Computer Science, Boston University (Jan 2026) 
 
 Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — I build retrieval pipelines, multi-agent architectures, and production infrastructure, and I benchmark every one of them against a real baseline before calling it done.
 
@@ -21,6 +21,17 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 <tr>
 <td width="50%" valign="top">
 
+**[🔁 Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine)** · Exactly-once workflow engine in Go, sagas defined in YAML
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+
+**Problem:** distributed workflows crash mid-execution and either double-run side effects or silently drop steps.
+**Built:** a Go engine with SHA-256 dedup keys for idempotent steps, an append-only Postgres event log for crash recovery, and saga compensation that calls each step's real rollback in reverse order with retry/backoff.
+**Result:** **35/35** fault-injection tests passed (SIGKILL at 7 crash points, plus concurrent-worker races) — **0 double executions, 0 lost steps**. Ships with a Prometheus-instrumented dashboard and a free-tier deploy (Render + Neon + Upstash).
+
+</td>
+<td width="50%" valign="top">
+
 **[🧬 FlowCast](https://github.com/srikarjy/Flowcast)** · Anomaly detection + LLM root-cause analysis for RNA-seq pipelines
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
@@ -30,6 +41,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 **Result:** **F1 0.870**, a 23% lift over a fixed-threshold baseline. Grounding the LLM in retrieved pipeline context cut unsupported causal claims from **39.6% → 9.4%** on a 48-case eval set.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[⚖️ Aletheia](https://github.com/srikarjy/Aletheia)** · Multi-agent debate system for scientific claim verification
@@ -41,8 +54,6 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 **Result:** confidence ECE improved **0.184 → 0.117**; a counterfactual eval suite caught **13/16** known memory-induced regressions before they shipped.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **[🩸 GlucoPulse](https://github.com/srikarjy/GlucoPulse)** · Real-time forecasting pipeline, ingestion to serving
@@ -54,6 +65,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 **Result:** TFT forecasts benchmarked against a persistence baseline at 30- and 60-minute horizons, in production-shaped infra, not a notebook.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[📱 BioFeed AI](https://github.com/srikarjy/BioFeed-AI)** · Recommendation engine + anomaly detection, iOS + FastAPI
@@ -65,8 +78,6 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 **Result:** **30% CTR lift** over a popularity baseline across 8,500+ articles; anomaly model surfaced 3 candidate signals in a 2-month backtest.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **[🔐 Biolab MCP Server](https://github.com/srikarjy/biolab-mcp-server)** · Provenance & auth layer for AI agents querying bio databases
@@ -78,6 +89,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 **Result:** every AI-generated answer is auditable back to its exact source query — a compliance-ready pattern for regulated environments.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[🧫 metalsw](https://github.com/srikarjy/metalsw)** · GPU-accelerated exact sequence alignment (Metal, Apple Silicon)
@@ -86,7 +99,18 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 **Problem:** exact Smith-Waterman protein search is accurate but slow on CPU at scale.
 **Built:** a Metal compute-shader implementation of Smith-Waterman, verified bit-for-bit against a scalar CPU oracle.
-**Result:** **13.5x** the throughput of Parasail's SIMD CPU implementation at 50k-sequence scale (0.816 GCUPS/Watt), with **0 mismatches** across 78,006 sequence-score comparisons.
+**Result:** **13.5x** the throughput of Parasail's SIMD CPU implementation at 50k-sequence scale (**0.816 GCUPS/Watt**, measured via `powermetrics`), with **0 mismatches** across 78,006 sequence-score comparisons.
+
+</td>
+<td width="50%" valign="top">
+
+**[🔬 Research-Orchestrator](https://github.com/srikarjy/Research-Orchestrator)** · Capstone: agentic research assistant with human-in-the-loop review
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+
+**Problem:** regulated environments (e.g. pharma/biotech) need AI research assistance that's auditable and never acts autonomously past its confidence.
+**Built:** unifies Aletheia (multi-agent debate), Workflow Engine (exactly-once execution), and Biolab MCP Server (fail-closed evidence/actions) behind confidence-gated human review.
+**Result:** designed to align with 21 CFR Part 11 / ALCOA+ — the FDA's standards for electronic records and data integrity.
 
 </td>
 </tr>
@@ -97,31 +121,37 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 ### 🛠️ Tech Stack
 
 **Backend**
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-**ML / AI**
+**AI Engineering**
+![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
+![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
+![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square)
 ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![QLoRA](https://img.shields.io/badge/-QLoRA%2FPEFT-FF6F00?style=flat-square)
 ![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
 ![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
 
-**LLMs & Agents**
-![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
-![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
-![QLoRA](https://img.shields.io/badge/-QLoRA%2FPEFT-FF6F00?style=flat-square)
-![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square)
+**Computational Biology**
+![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+![CUDA](https://img.shields.io/badge/-CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![Metal](https://img.shields.io/badge/-Metal-000000?style=flat-square&logo=apple&logoColor=white)
+![PubMed](https://img.shields.io/badge/-PubMed-326599?style=flat-square)
+![ChEMBL](https://img.shields.io/badge/-ChEMBL-7C3AED?style=flat-square)
+![UniProt](https://img.shields.io/badge/-UniProt-1BA3E0?style=flat-square)
+![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 
 **Data Infra**
 ![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
 ![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
 ![Spark](https://img.shields.io/badge/-PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
-![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+![TimescaleDB](https://img.shields.io/badge/-TimescaleDB-FDB515?style=flat-square&logo=postgresql&logoColor=black)
 
 **Cloud**
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
