@@ -25,9 +25,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 
-**Problem:** distributed workflows crash mid-execution and either double-run side effects or silently drop steps.
-**Built:** a Go engine with SHA-256 dedup keys for idempotent steps, an append-only Postgres event log for crash recovery, and saga compensation that calls each step's real rollback in reverse order with retry/backoff.
-**Result:** **35/35** fault-injection tests passed (SIGKILL at 7 crash points, plus concurrent-worker races) — **0 double executions, 0 lost steps**. Ships with a Prometheus-instrumented dashboard and a free-tier deploy (Render + Neon + Upstash).
+Go engine giving distributed workflows exactly-once execution — idempotent steps, Postgres-backed crash recovery, real saga rollbacks.
+**35/35** fault-injection tests passed (SIGKILL + concurrent races) — **0 double executions, 0 lost steps**.
 
 </td>
 <td width="50%" valign="top">
@@ -36,9 +35,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
-**Problem:** nf-core/rnaseq runs fail silently; engineers manually dig through logs to find why.
-**Built:** Go CLI with a MAD-based statistical classifier to flag anomalous runs, plus an LLM layer that narrates the likely cause.
-**Result:** **F1 0.870**, a 23% lift over a fixed-threshold baseline. Grounding the LLM in retrieved pipeline context cut unsupported causal claims from **39.6% → 9.4%** on a 48-case eval set.
+Go CLI that flags anomalous RNA-seq runs with a statistical classifier, then has an LLM narrate the likely root cause.
+**F1 0.870** (23% lift over baseline); grounding the LLM cut unsupported claims **39.6% → 9.4%**.
 
 </td>
 </tr>
@@ -49,9 +47,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square)
 
-**Problem:** single-agent LLM pipelines overstate confidence and hallucinate quietly.
-**Built:** a LangGraph pipeline where agents argue opposing positions and cross-examine each other before a verdict, calibrated against historical outcomes.
-**Result:** confidence ECE improved **0.184 → 0.117**; a counterfactual eval suite caught **13/16** known memory-induced regressions before they shipped.
+LangGraph pipeline where agents argue opposing positions and cross-examine each other before reaching a verdict.
+Confidence calibration (ECE) improved **0.184 → 0.117**; caught **13/16** known hallucination regressions.
 
 </td>
 <td width="50%" valign="top">
@@ -60,9 +57,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
-**Problem:** CGM data streams in real time, but most forecasting demos only work offline on static datasets.
-**Built:** end-to-end streaming stack — Kafka ingestion, TimescaleDB storage, PySpark features, a Temporal Fusion Transformer served via ONNX, Airflow-orchestrated, monitored in Grafana.
-**Result:** TFT forecasts benchmarked against a persistence baseline at 30- and 60-minute horizons, in production-shaped infra, not a notebook.
+End-to-end streaming stack — Kafka ingestion, TimescaleDB, PySpark features, a Transformer model served via ONNX, Airflow-orchestrated.
+Forecasts blood sugar 30-60 min ahead, benchmarked against a persistence baseline in production-shaped infra.
 
 </td>
 </tr>
@@ -73,9 +69,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 
-**Problem:** biotech news is high-volume and low-signal; analysts miss relevant stories.
-**Built:** SwiftUI app backed by a FastAPI service using implicit-feedback recommendations, plus an anomaly detector over company activity.
-**Result:** **30% CTR lift** over a popularity baseline across 8,500+ articles; anomaly model surfaced 3 candidate signals in a 2-month backtest.
+SwiftUI app backed by a FastAPI service, using implicit-feedback recommendations plus anomaly detection on company activity.
+**30% CTR lift** over a popularity baseline across 8,500+ articles.
 
 </td>
 <td width="50%" valign="top">
@@ -84,9 +79,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
 
-**Problem:** agentic tools querying scientific databases produce answers with no traceable lineage.
-**Built:** an MCP server that logs every query with full retrieval context, returns a `retrieval_id` for end-to-end lineage, with multi-tenant JWT auth and SSE streaming.
-**Result:** every AI-generated answer is auditable back to its exact source query — a compliance-ready pattern for regulated environments.
+MCP server that logs every AI agent query against bio databases with full retrieval context and a traceable `retrieval_id`.
+Multi-tenant JWT auth + SSE streaming — every AI-generated answer is auditable back to its source.
 
 </td>
 </tr>
@@ -97,9 +91,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![C++](https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Metal](https://img.shields.io/badge/Metal-000000?style=flat-square&logo=apple&logoColor=white)
 
-**Problem:** exact Smith-Waterman protein search is accurate but slow on CPU at scale.
-**Built:** a Metal compute-shader implementation of Smith-Waterman, verified bit-for-bit against a scalar CPU oracle.
-**Result:** **13.5x** the throughput of Parasail's SIMD CPU implementation at 50k-sequence scale (**0.816 GCUPS/Watt**, measured via `powermetrics`), with **0 mismatches** across 78,006 sequence-score comparisons.
+Metal compute-shader implementation of exact Smith-Waterman protein search, verified bit-for-bit against a CPU oracle.
+**13.5x** the throughput of Parasail's SIMD CPU implementation, **0 mismatches** across 78,006 comparisons.
 
 </td>
 <td width="50%" valign="top">
@@ -108,9 +101,8 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 
-**Problem:** regulated environments (e.g. pharma/biotech) need AI research assistance that's auditable and never acts autonomously past its confidence.
-**Built:** unifies Aletheia (multi-agent debate), Workflow Engine (exactly-once execution), and Biolab MCP Server (fail-closed evidence/actions) behind confidence-gated human review.
-**Result:** designed to align with 21 CFR Part 11 / ALCOA+ — the FDA's standards for electronic records and data integrity.
+Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), and Biolab MCP Server (auditable evidence) behind human review.
+Built to align with 21 CFR Part 11 / ALCOA+ — the FDA's data-integrity standards.
 
 </td>
 </tr>
@@ -120,15 +112,22 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 ### 🛠️ Tech Stack
 
-**Backend**
+**Languages**
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Swift](https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white)
+![C++](https://img.shields.io/badge/-C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+**Backend & Infra**
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![JWT](https://img.shields.io/badge/-JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 
-**AI Engineering**
+**AI / ML / Agents**
 ![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
 ![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
 ![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square)
@@ -137,26 +136,28 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 ![QLoRA](https://img.shields.io/badge/-QLoRA%2FPEFT-FF6F00?style=flat-square)
 ![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
 ![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
+![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 
-**Computational Biology**
+**Data Engineering**
+![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
+![PySpark](https://img.shields.io/badge/-PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![TimescaleDB](https://img.shields.io/badge/-TimescaleDB-FDB515?style=flat-square&logo=postgresql&logoColor=black)
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
+
+**GPU / Computational Biology**
 ![CUDA](https://img.shields.io/badge/-CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![Metal](https://img.shields.io/badge/-Metal-000000?style=flat-square&logo=apple&logoColor=white)
 ![PubMed](https://img.shields.io/badge/-PubMed-326599?style=flat-square)
 ![ChEMBL](https://img.shields.io/badge/-ChEMBL-7C3AED?style=flat-square)
 ![UniProt](https://img.shields.io/badge/-UniProt-1BA3E0?style=flat-square)
-![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
 
-**Data Infra**
-![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
-![Spark](https://img.shields.io/badge/-PySpark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
-![TimescaleDB](https://img.shields.io/badge/-TimescaleDB-FDB515?style=flat-square&logo=postgresql&logoColor=black)
-
-**Cloud**
+**Cloud & Observability**
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![SageMaker](https://img.shields.io/badge/-SageMaker-01A88D?style=flat-square)
 ![Bedrock](https://img.shields.io/badge/-Bedrock-8C4FFF?style=flat-square)
+![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 
 ---
 
