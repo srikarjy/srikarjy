@@ -21,6 +21,16 @@ I build retrieval systems, agentic pipelines, and provenance infrastructure for 
 <tr>
 <td width="50%" valign="top">
 
+**[🔁 Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine)**
+Exactly-once workflow engine in Go — define sagas in YAML, run them against any HTTP service
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+
+SHA-256 dedup keys give idempotent step execution; crash recovery replays an append-only Postgres event log. Saga compensation actually invokes each step's real rollback call, reverse-order, with per-step retry and exponential backoff. Verified via SIGKILL fault injection at 7 crash points plus concurrent-worker races: **35/35 passed, 0 double executions, 0 lost steps**. Ships with a Prometheus-instrumented dashboard and a free-tier deploy (Render + Neon + Upstash).
+
+</td>
+<td width="50%" valign="top">
+
 **[🧬 FlowCast](https://github.com/srikarjy/Flowcast)**
 Go CLI diagnosing nf-core/rnaseq pipeline runs
 
@@ -29,6 +39,8 @@ Go CLI diagnosing nf-core/rnaseq pipeline runs
 Modified Z-score (MAD) classifier → **F1 0.870**, a **23% lift** over fixed-threshold baseline. LLM narration cut unsupported causal claims **39.6% → 9.4%** on a 48-case golden set.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[⚖️ Aletheia](https://github.com/srikarjy/Aletheia)**
@@ -39,8 +51,6 @@ Multi-agent scientific reasoning, agents debate before concluding
 Historical-outcome calibration cut confidence ECE **0.184 → 0.117**. Counterfactual eval caught **13/16** known memory-induced regressions.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **[🩸 GlucoPulse](https://github.com/srikarjy/GlucoPulse)**
@@ -51,6 +61,8 @@ Real-time CGM streaming pipeline, ingestion to serving
 TFT model evaluated against a persistence baseline at 30 and 60 minute forecast horizons. Full stack: Kafka, TimescaleDB, PySpark, Airflow, ONNX, Grafana.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[📱 BioFeed AI](https://github.com/srikarjy/BioFeed-AI)**
@@ -61,8 +73,6 @@ iOS biotech intelligence app, SwiftUI + FastAPI
 Implicit-feedback recs improve CTR **30%** over popularity baseline across 8,500+ articles. Anomaly detection surfaced **3 candidate signals** in a 2-month backtest.
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **[🔐 Biolab MCP Server](https://github.com/srikarjy/biolab-mcp-server)**
@@ -73,6 +83,8 @@ Provenance layer between AI agents and bio databases
 Every query logged with full retrieval context, returns a `retrieval_id` for end-to-end lineage. Multi-tenant, JWT auth, SSE streaming.
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[⚙️ metalsw](https://github.com/srikarjy/metalsw)**
@@ -81,18 +93,6 @@ Exact Smith-Waterman protein search on Apple Silicon GPU via Metal
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Metal](https://img.shields.io/badge/Metal-000000?style=flat-square&logo=apple&logoColor=white)
 
 Correctness-verified against a scalar CPU oracle (0 mismatches / 78,006 comparisons) and cross-checked vs. Parasail. Up to **13.5x GPU/SIMD-CPU speedup** at 50K-sequence scale, **0.816 GCUPS/Watt** measured via `powermetrics`.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**[🔁 Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine)**
-Exactly-once workflow orchestration primitives, in Go
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-
-Idempotent step execution via SHA-256 dedup keys, crash recovery by replaying an append-only Postgres event log, reverse-order Saga compensation with durable checkpointing.
 
 </td>
 <td width="50%" valign="top">
@@ -112,15 +112,13 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 
 ### 🛠️ Tech Stack
 
-**Backend **
+**Backend**
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-
 
 **AI Engineering**
 ![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square)
@@ -132,8 +130,6 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 ![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
 ![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
 
-
-
 **Computational Biology**
 ![Neo4j](https://img.shields.io/badge/-Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)
 ![CUDA](https://img.shields.io/badge/-CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
@@ -142,8 +138,6 @@ Capstone unifying Aletheia (debate), Workflow Engine (exactly-once execution), a
 ![ChEMBL](https://img.shields.io/badge/-ChEMBL-7C3AED?style=flat-square)
 ![UniProt](https://img.shields.io/badge/-UniProt-1BA3E0?style=flat-square)
 ![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
-
-
 
 **Data Infra**
 ![Kafka](https://img.shields.io/badge/-Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
