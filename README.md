@@ -27,26 +27,44 @@ Backend + ML engineer specializing in **LLM/agent systems, RAG, and MLOps** — 
 
 **Backend**
 
+![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Redis Streams](https://img.shields.io/badge/-Redis%20Streams-DC382D?style=flat-square&logo=redis&logoColor=white)
+![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![WebSockets](https://img.shields.io/badge/-WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
+![JWT/OAuth](https://img.shields.io/badge/-JWT%2FOAuth-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![APScheduler](https://img.shields.io/badge/-APScheduler-3776AB?style=flat-square)
+![Saga Pattern](https://img.shields.io/badge/-Saga%20Pattern-6E40C9?style=flat-square)
+![Idempotency](https://img.shields.io/badge/-Idempotency-6E40C9?style=flat-square)
+![Fault Injection](https://img.shields.io/badge/-Fault%20Injection%20Testing-6E40C9?style=flat-square)
+![Event Sourcing](https://img.shields.io/badge/-Event%20Sourcing-6E40C9?style=flat-square)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 **AI / ML / LLMs**
 
-![Anthropic](https://img.shields.io/badge/-Anthropic-191919?style=flat-square)
+![Anthropic Claude](https://img.shields.io/badge/-Anthropic%20Claude-191919?style=flat-square)
 ![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/-HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![QLoRA/PEFT](https://img.shields.io/badge/-QLoRA%2FPEFT-FF6F00?style=flat-square)
-![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
-![pgvector](https://img.shields.io/badge/-pgvector-336791?style=flat-square)
-![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
-![MCP](https://img.shields.io/badge/-MCP-000000?style=flat-square)
-![LightGBM](https://img.shields.io/badge/-LightGBM-9ACD32?style=flat-square)
+![Multi-Agent Systems](https://img.shields.io/badge/-Multi--Agent%20Systems-8A2BE2?style=flat-square)
+![Model Context Protocol](https://img.shields.io/badge/-Model%20Context%20Protocol-000000?style=flat-square)
 ![RAG](https://img.shields.io/badge/-RAG-8A2BE2?style=flat-square)
+![Tool Use / Function Calling](https://img.shields.io/badge/-Tool%20Use%20%2F%20Function%20Calling-8A2BE2?style=flat-square)
+![LLM Evals](https://img.shields.io/badge/-LLM%20Evals%20%2F%20Benchmarking-8A2BE2?style=flat-square)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![HuggingFace Transformers](https://img.shields.io/badge/-HuggingFace%20Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![sentence-transformers](https://img.shields.io/badge/-sentence--transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![QLoRA/PEFT](https://img.shields.io/badge/-QLoRA%2FPEFT%20Fine--Tuning-FF6F00?style=flat-square)
+![FAISS](https://img.shields.io/badge/-FAISS-4285F4?style=flat-square)
+![ONNX](https://img.shields.io/badge/-ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
+![LightGBM](https://img.shields.io/badge/-LightGBM-9ACD32?style=flat-square)
+![Two-Tower Retrieval](https://img.shields.io/badge/-Two--Tower%20Retrieval-9ACD32?style=flat-square)
+![Temporal Fusion Transformer](https://img.shields.io/badge/-Temporal%20Fusion%20Transformer-EE4C2C?style=flat-square)
 
 **Data Engineering**
 
