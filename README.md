@@ -6,9 +6,13 @@ Based in Boston, Massachusetts. MS in Computer Science from Boston University.
 
 [Portfolio](https://srikarjy.site) | [LinkedIn](https://www.linkedin.com/in/srikarjy) | [Email](mailto:srikarjy77@gmail.com)
 
+Recruiting for a specific track? Everything below is grouped three ways: **Software Engineering** · **AI Engineering** · **Scientific & Bio Systems**.
+
 ## Featured work
 
-### [RunBridge](https://github.com/srikarjy/RunBridge) — Backend and platform engineering
+### ⚙️ Software Engineering — backend & distributed systems
+
+#### [RunBridge](https://github.com/srikarjy/RunBridge)
 
 A Go control plane for scientific workflows that validates run intent, evaluates deterministic policy, and binds reviewer decisions to immutable specifications before execution.
 
@@ -16,7 +20,7 @@ A Go control plane for scientific workflows that validates run intent, evaluates
 
 `Nextflow` `nf-core/rnaseq` `AWS ECS` `RDS` `ALB`
 
-### [Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine) — Distributed systems
+#### [Durable Workflow Engine](https://github.com/srikarjy/workflow-Engine)
 
 A Go workflow engine built around idempotent step execution, Redis Streams, saga compensation, and event-backed recovery after worker crashes.
 
@@ -24,7 +28,9 @@ A Go workflow engine built around idempotent step execution, Redis Streams, saga
 
 `Redis Streams` `Cobra` `YAML`
 
-### [Concordia Colony](https://github.com/srikarjy/concordia) — AI and scientific systems
+### 🤖 AI Engineering — production AI & ML systems
+
+#### [Concordia Colony](https://github.com/srikarjy/concordia)
 
 A local-first AI system that traces generated claims through a durable workflow, bounded scientist agents, deterministic verification, and a content-addressed evidence graph.
 
@@ -32,15 +38,7 @@ A local-first AI system that traces generated claims through a durable workflow,
 
 `Qwen 3` `Ollama` `SQLite` `DuckDB`
 
-### [BioLab MCP Server](https://github.com/srikarjy/biolab-mcp-server) — Scientific infrastructure
-
-An MCP service for agent-facing retrieval across PubMed, Europe PMC, ClinicalTrials.gov, and bioRxiv/medRxiv, with hash-chained audit records and tested failure recovery.
-
-<img src="https://skillicons.dev/icons?i=py,go,docker,githubactions" height="28" alt="Python, Go, Docker, GitHub Actions" />
-
-`FastMCP` `Turso` `SQLite` `Hugging Face Spaces`
-
-### [GlucoPulse](https://github.com/srikarjy/GlucoPulse) — Data and ML systems
+#### [GlucoPulse](https://github.com/srikarjy/GlucoPulse)
 
 A fault-tolerant glucose-forecasting pipeline that validates streaming sensor data, trains a Temporal Fusion Transformer, and serves 30- and 60-minute predictions through FastAPI and ONNX Runtime.
 
@@ -48,7 +46,17 @@ A fault-tolerant glucose-forecasting pipeline that validates streaming sensor da
 
 `TimescaleDB` `PySpark` `Airflow` `FastAPI` `ONNX Runtime`
 
-### [FlowCast](https://github.com/srikarjy/Flowcast) — Bioinformatics workflow systems
+### 🧬 Scientific & Bio Systems — bioinformatics infrastructure
+
+#### [BioLab MCP Server](https://github.com/srikarjy/biolab-mcp-server)
+
+An MCP service for agent-facing retrieval across PubMed, Europe PMC, ClinicalTrials.gov, and bioRxiv/medRxiv, with hash-chained audit records and tested failure recovery.
+
+<img src="https://skillicons.dev/icons?i=py,go,docker,githubactions" height="28" alt="Python, Go, Docker, GitHub Actions" />
+
+`FastMCP` `Turso` `SQLite` `Hugging Face Spaces`
+
+#### [FlowCast](https://github.com/srikarjy/Flowcast)
 
 A Go and Python diagnostics system that parses Nextflow traces and MultiQC metrics, detects failures and outliers, and constrains LLM explanations to explicit evidence.
 
@@ -57,6 +65,8 @@ A Go and Python diagnostics system that parses Nextflow traces and MultiQC metri
 `Nextflow` `nf-core/rnaseq` `MultiQC` `STAR` `SQLite` `OpenAI API` `OpenTelemetry`
 
 ## Technical stack
+
+### ⚙️ Software Engineering
 
 **Languages**
 
@@ -68,21 +78,21 @@ A Go and Python diagnostics system that parses Nextflow traces and MultiQC metri
 
 `SQL` `Django REST Framework` `Pydantic` `Redis Streams` `Celery` `REST APIs`
 
-**AI, retrieval, and evaluation**
-
-<img src="https://skillicons.dev/icons?i=pytorch" height="30" alt="PyTorch" />
-
-`ONNX Runtime` `RAG` `LLM evaluation` `MCP` `FastMCP` `BGE` `SPECTER2` `FAISS` `pgvector` `QLoRA` `PEFT`
-
-**Data and scientific workflows**
-
-`Kafka` `Airflow` `PySpark` `TimescaleDB` `Nextflow` `nf-core/rnaseq` `MultiQC` `STAR`
-
 **Cloud and platform**
 
 <img src="https://skillicons.dev/icons?i=aws,terraform,kubernetes,docker,githubactions,prometheus,grafana,git" height="30" alt="AWS, Terraform, Kubernetes, Docker, GitHub Actions, Prometheus, Grafana, Git" />
 
 `AWS Lambda` `EventBridge` `ECS` `RDS` `ALB` `OpenTelemetry`
+
+### 🤖 AI Engineering
+
+<img src="https://skillicons.dev/icons?i=pytorch" height="30" alt="PyTorch" />
+
+`ONNX Runtime` `RAG` `LLM evaluation` `MCP` `FastMCP` `BGE` `SPECTER2` `FAISS` `pgvector` `QLoRA` `PEFT`
+
+### 🧬 Scientific & Bio Systems
+
+`Kafka` `Airflow` `PySpark` `TimescaleDB` `Nextflow` `nf-core/rnaseq` `MultiQC` `STAR`
 
 ## Current work
 
@@ -92,6 +102,6 @@ A Go and Python diagnostics system that parses Nextflow traces and MultiQC metri
 
 ## Contact
 
-I'm interested in software engineering roles focused on backend systems, production AI infrastructure, distributed workflows, and scientific applications.
+I'm interested in software engineering roles across three tracks: backend systems and distributed workflows, production AI infrastructure, and scientific/bioinformatics applications.
 
 [srikarjy.site](https://srikarjy.site) | [linkedin.com/in/srikarjy](https://www.linkedin.com/in/srikarjy) | [srikarjy77@gmail.com](mailto:srikarjy77@gmail.com)
